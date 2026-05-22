@@ -17,12 +17,6 @@
 #     artifact-name: corne_left_with_logging
 #
 
-#include:
-# - board: seeeduino_xiao_ble
-#  shield: MagicMouse2 rgbled_adapter
-
-on: [push, pull_request, workflow_dispatch]
-
-jobs:
-  build:
-    uses: petejohanson/zmk/.github/workflows/build-user-config.yml@feat/pointers-move-scroll
+include:
+ - board: seeeduino_xiao_ble
+  shield: MagicMouse2 rgbled_adapter
