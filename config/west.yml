@@ -9,13 +9,13 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: feat/pointers-move-scroll
+      revision: feat/pointers-move-scroll   # ← 2023年12月14日版（今回確定したもの）
       import: app/west.yml
     - name: zmk-rgbled-widget
       remote: caksoylar
-      revision: b0b8cc2        # ← 2024年後半当時の安定状態に固定
+      revision: 841ee9c                    # ← 2023年11月26日のコミットに固定
     - name: zmk-pmw3610-driver
       remote: inorichi
-      revision: 1d9c2c6        # ← 2024年後半当時の安定状態に固定
+      revision: e56c706                    # ← 2023年11月23日のコミットに固定
   self:
     path: config
